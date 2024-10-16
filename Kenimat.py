@@ -4,11 +4,7 @@ from menu_sys import *
 
 def kenimatics_RA():
     disp_clr()
-    print("""
-        Sketch situation
-        Create a list of kinematic variables beginning with what you are asked for and what is given. Make a separate list for each dimension.
-        Solve
-    """)
+    print("Sketch situation. Create a list of kinematic variables beginning with what you are asked for and what is given. Make a separate list for each dimension. Solve")
 
 
 def kenimat():

@@ -5,10 +5,7 @@ from menu_sys import *
 
 def force_RA():
     disp_clr()
-    print("""
-        Graph forces
-        Solve for missing
-    """)
+    print("Graph forces. Solve for missing")
 
 
 def force():
