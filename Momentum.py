@@ -4,10 +4,6 @@ from menu_sys import *
 
 
 def momentum_RA():
-    print("If potential energy NOT exists then use W=E_k. Else if there is any work done by nonconservative forces then use W=sum(E) (Nonconservative work-energy theorem). Else use E_f=E_i (Law of conservation of mechanical energy)")
-
-
-def momentum_RA():
     disp_clr()
     print("""If net external force NOT zero, use I-M Theroem. Else, use Conserv of Lin M. Identify type of collision. If completely inelastic apply Conserv of Lin M. Else if elastic apply Conserv Of E_k in addition to  Conserv of Lin M. Solve""")
 
