@@ -4,9 +4,7 @@ from menu_sys import *
 
 
 def momentum_RA():
-    print("If potential energy exists then use W=E_k")
-    print("else if there is any work done by nonconservative forces then use W=sum(E) (Nonconservative work-energy theorem)")
-    print("else use E_f=E_i (Law of conservation of mechanical energy)")
+    print("If potential energy NOT exists then use W=E_k. Else if there is any work done by nonconservative forces then use W=sum(E) (Nonconservative work-energy theorem). Else use E_f=E_i (Law of conservation of mechanical energy)")
 
 
 def momentum_RA():
