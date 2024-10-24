@@ -4,17 +4,18 @@ from menu_sys import *
 
 
 def RA():
-    print("Sketch situation. Create a list of kinematic variables beginning with what you are asked for and what is given. Make a separate list for each dimension. Solve")
+    print("Sketch situation. Create a list of kinematic variables beginning with what you are asked for and what is given. Solve")
 
 
 def v_t():
     disp_clr()
-    print("v_t = 2pi*r/T, where T is the time for a full rotation.")
+    print("avg_v_t = 2pi*r/T, where T is the time for a full rotation.")
+    print("v_t = r*w, where w is the angular velocity.")
 
     
 def a_c():
     disp_clr()
-    print("a_c = v_t^2/r")
+    print("a_c = v_t^2/r, where a_c is centripital acceleration.")
 
 
 def s():
@@ -23,18 +24,22 @@ def s():
     print("s=rad*r")
 
 
-def w():
+def a_t():
     disp_clr()
-    print("avg(w)=change(radians)/change(time)")
-    print("w=rad/t")
+    print("a_t=r*a_a")
+
+
+def a_c():
+    disp_clr()
+    print("a_c=w^2*r")
 
 
 def rot_keni():
     disp_clr()
     # Initializing all variables as None
-    w_i = input("w_i: ")
-    w_f = input("w_f: ")
-    a = input("a: ")
+    w_i = input("w_i (angular velocity): ")
+    w_f = input("w_f (angular velocity): ")
+    a = input("a (angular acceleration): ")
     t = input("t: ")
     rad = input("rad: ")
 
@@ -101,10 +106,11 @@ menu_structure = {
         "title": "Energy Approach",
         "options": {
             "Reasoning Strategy": RA,
-            "Tang Veloc": v_t,
+            "Avg Tang Veloc": v_t,
             "Centrip Accel": a_c,
             "Arc Length": s,
-            "Avg Angular Veloc": w,
+            "Tang Accel": a_t,
+            "Centrip Accel": a_c,
             "Kenimatics": rot_keni
         }
     },
