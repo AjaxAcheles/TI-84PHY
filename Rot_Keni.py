@@ -79,6 +79,21 @@ def rot_keni():
         w_f = (w_i ** 2 + 2 * a * rad) ** 0.5
         print("Final angular velocity (w_f) = " + str(w_f))
 
+    if a is None and w_f is not None and w_i is not None and rad is not None:
+        a = (w_f ** 2 - w_i ** 2) / (2 * rad)
+        print("Angular acceleration (a) = " + str(a))
+
+    # Equation 4: rad = (w_f + w_i) / 2 * t
+    if rad is None and w_f is not None and w_i is not None and t is not None:
+        rad = ((w_f + w_i) / 2) * t
+        print("Angular displacement (rad) = " + str(rad))
+
+    if t is None and w_f is not None and w_i is not None and rad is not None:
+        t = (2 * rad) / (w_f + w_i)
+        print("Time (t) = " + str(t))
+
+    if w_i is None or w_f is None or a is None or t is None or rad is None:
+        print("Not enough information to solve all variables.")
 
 
 menu_structure = {
