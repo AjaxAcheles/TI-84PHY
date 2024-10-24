@@ -23,13 +23,13 @@ def work():
 
         if F is None:
             F = W / (d * cos(theta * 3.14159 / 180))  # Calculate F
-            print("Force (F) = " + str(F) + " N")
+            print("Force (F) = " + str(F))
         elif d is None:
             d = W / (F * cos(theta * 3.14159 / 180))  # Calculate d
-            print("Distance (d) = " + str(d) + " m")
+            print("Distance (d) = " + str(d))
         elif W is None:
             W = F * d * cos(theta * pi / 180)  # Calculate W
-            print("Work Done (W) = " + str(W) + " J")
+            print("Work Done (W) = " + str(W))
         else:
             print("Insufficient information to solve for any variable.")
     except ValueError:
@@ -50,13 +50,13 @@ def E_k():
 
         if E_k is None:
             E_k = 0.5 * m * v**2  # Calculate E_k
-            print("Kinetic Energy (E_k) = " + str(E_k) + " J")
+            print("Kinetic Energy (E_k) = " + str(E_k))
         elif m is None:
             m = (2 * E_k) / (v**2)  # Calculate m
-            print("Mass (m) = " + str(m) + " kg")
+            print("Mass (m) = " + str(m))
         elif v is None:
             v = (2 * E_k / m)**0.5  # Calculate v
-            print("Velocity (v) = " + str(v) + " m/s")
+            print("Velocity (v) = " + str(v))
         else:
             print("Insufficient information to solve for any variable.")
     except ValueError:
@@ -79,16 +79,16 @@ def E_g():
 
         if E_g is None:
             E_g = m * g * h  # Calculate E_g
-            print("Gravitational Potential Energy (E_g) = " + str(E_g) + " J")
+            print("Gravitational Potential Energy (E_g) = " + str(E_g))
         elif m is None:
             m = E_g / (g * h)  # Calculate m
-            print("Mass (m) = " + str(m) + " kg")
+            print("Mass (m) = " + str(m))
         elif g is None:
             g = E_g / (m * h)  # Calculate g
-            print("Acceleration due to gravity (g) = " + str(g) + " m/s²")
+            print("Acceleration due to gravity (g) = " + str(g))
         elif h is None:
             h = E_g / (m * g)  # Calculate h
-            print("Height (h) = " + str(h) + " m")
+            print("Height (h) = " + str(h))
         else:
             print("Insufficient information to solve for any variable.")
     except ValueError:

@@ -32,19 +32,19 @@ def I():
                 I = F * T  # Calculate impulse using I = F * T
             elif m is not None and v_i is not None and v_f is not None:
                 I = m * (v_f - v_i)  # Calculate impulse using I = m(v_f - v_i)
-            print("Impulse (I) = " + str(I) + " Ns")
+            print("Impulse (I) = " + str(I))
         elif F is None and T is not None:
             F = I / T  # Calculate force
-            print("Force (F) = " + str(F) + " N")
+            print("Force (F) = " + str(F))
         elif T is None and F is not None:
             T = I / F  # Calculate time
-            print("Time (T) = " + str(T) + " s")
+            print("Time (T) = " + str(T))
         elif v_f is None and m is not None and v_i is not None:
             v_f = (I / m) + v_i  # Calculate final velocity
-            print("Final velocity (v_f) = " + str(v_f) + " m/s")
+            print("Final velocity (v_f) = " + str(v_f))
         elif v_i is None and m is not None and v_f is not None:
             v_i = v_f - (I / m)  # Calculate initial velocity
-            print("Initial velocity (v_i) = " + str(v_i) + " m/s")
+            print("Initial velocity (v_i) = " + str(v_i))
         else:
             print("Insufficient information to solve for any variable.")
     except ValueError:
@@ -65,13 +65,13 @@ def M_l():
 
         if p is None:
             p = m * v  # Calculate linear momentum
-            print("Linear Momentum (p) = " + str(p) + " kg*m/s")
+            print("Linear Momentum (p) = " + str(p))
         elif m is None:
             m = p / v  # Calculate mass
-            print("Mass (m) = " + str(m) + " kg")
+            print("Mass (m) = " + str(m))
         elif v is None:
             v = p / m  # Calculate velocity
-            print("Velocity (v) = " + str(v) + " m/s")
+            print("Velocity (v) = " + str(v))
         else:
             print("Insufficient information to solve for any variable.")
     except ValueError:

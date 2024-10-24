@@ -22,13 +22,13 @@ def force():
 
         if f is None and m is not None and a is not None:
             f = m * a
-            print("Force (F) = " + str(f) + " N")
+            print("Force (F) = " + str(f))
         elif m is None and f is not None and a is not None:
             m = f / a
-            print("Mass (m) = " + str(m) + " kg")
+            print("Mass (m) = " + str(m))
         elif a is None and f is not None and m is not None:
             a = f / m
-            print("Acceleration (a) = " + str(a) + " m/s²")
+            print("Acceleration (a) = " + str(a))
         else:
             print("Insufficient information to solve for any variable.")
     except ValueError:
@@ -52,16 +52,16 @@ def F_g():
 
         if f_g is None:
             f_g = G * (m1 * m2) / r ** 2
-            print("Gravitational Force (F_g) = " + str(f_g) + " N")
+            print("Gravitational Force (F_g) = " + str(f_g))
         elif m1 is None:
             m1 = (f_g * r ** 2) / (G * m2)
-            print("Mass of first object (m1) = " + str(m1) + " kg")
+            print("Mass of first object (m1) = " + str(m1))
         elif m2 is None:
             m2 = (f_g * r ** 2) / (G * m1)
-            print("Mass of second object (m2) = " + str(m2) + " kg")
+            print("Mass of second object (m2) = " + str(m2))
         elif r is None:
             r = ((f_g * m1 * m2)/G)**0.5
-            print("Distance between the centers of the objects (r) = " + str(r) + " m")
+            print("Distance between the centers of the objects (r) = " + str(r))
         else:
             print("Insufficient information to solve for any variable.")
     except ValueError:
@@ -77,7 +77,7 @@ def F_w(): #### continue here
         mass = float(mass) if mass else None
         if mass is not None:
             F_w = mass * g
-            print("Weight (F_w) = " + str(F_w) + " N")
+            print("Weight (F_w) = " + str(F_w))
         elif mass is None:
             pass
         else:
@@ -98,7 +98,7 @@ def F_s():
             print("Normal force (F_n) must be provided to calculate static friction force.")
         else:
             F_s = mu_s * F_n
-            print("Static Friction Force (F_s) = " + str(F_s) + " N")
+            print("Static Friction Force (F_s) = " + str(F_s))
     except ValueError:
         print("Invalid input. Please enter valid numerical values.")
 
@@ -115,7 +115,7 @@ def F_k():
             print("Normal force (F_n) must be provided to calculate kinetic friction force.")
         else:
             F_k = mu_k * F_n
-            print("Kinetic Friction Force (F_k) = " + str(F_k) + " N")
+            print("Kinetic Friction Force (F_k) = " + str(F_k))
     except ValueError:
         print("Invalid input. Please enter valid numerical values.")
 
