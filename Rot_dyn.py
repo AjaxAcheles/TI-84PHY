@@ -21,12 +21,6 @@ def T():
     print("T^2 = (4*pi^2*r^3)/(G*M_e) where T is the time to rotate an object once.")
 
 
-def I():
-    disp_clr()
-    print("I = sum(m*r^2)")
-    print("Moment of inertia = sum of (mass * radius^2)")
-
-
 def E_r():
     disp_clr()
     print("E_r = (1/2) * I * w^2")
@@ -51,7 +45,17 @@ menu_structure = {
             "Reasoning Strategy": RA,
             "Torque": t,
             "Orbital Period": T,
-            "Moment of Inertia": I,
+            "Moment of Inertia": {
+                "title": "Moment of Inertia",
+                "options": {
+                    "Hoop or thin cylindrical shell": lambda: print("I = m*r^2"),
+                    "Solid cylinder or disk": lambda: print("I = (1/2)*m*r^2"),
+                    "Solid sphere": lambda: print("I = (2/5)*m*r^2"),
+                    "Hollow sphere": lambda: print("I = (2/3)*m*r^2"),
+                    "Long, thin rod with rotation axis at center": lambda: print("I = (1/12)*m*L^2"),
+                    "Long, thin rod with rotation axis at end": lambda: print("I = (1/3)*m*L^2"),
+                }
+            },
             "Rotational Kinetic Energy": E_r,
             "Angular Momentum": M_a,
             "Conservation of Angular Momentum": conserv_ang_M
