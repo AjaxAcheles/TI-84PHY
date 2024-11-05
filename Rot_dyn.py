@@ -5,7 +5,7 @@ from menu_sys import *
 
 def RA():
     disp_clr()
-    print("Draw sketch. After selecting a convenient axis of rotation, determine torques with respect to that axis. Algebraically add torques and equate to: if there is angular acceleration or zero if there is rotational equilibrium. Solve.")
+    print("Draw sketch. After selecting a convenient axis of rotation, determine torques with respect to that axis. Algebraically add torques and equate to: I*a_a if there is angular acceleration or zero if there is rotational equilibrium. Solve.")
 
 
 def t():
@@ -39,6 +39,10 @@ def M_a():
     print("Angular Momentum = Moment of Inertia * angular velocity")
 
 
+def conserv_ang_M():
+    disp_clr()
+    print("Law of conservation of angular momentum: L_f = L_i")
+
 
 menu_structure = {
     "Main Menu": {
@@ -50,6 +54,7 @@ menu_structure = {
             "Moment of Inertia": I,
             "Rotational Kinetic Energy": E_r,
             "Angular Momentum": M_a,
+            "Conservation of Angular Momentum": conserv_ang_M
         }
     },
 }   
