@@ -29,11 +29,6 @@ def a_t():
     print("a_t=r*a_a")
 
 
-def a_c():
-    disp_clr()
-    print("a_c=w^2*r")
-
-
 def rot_keni():
     disp_clr()
     # Initializing all variables as None
