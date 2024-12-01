@@ -4,29 +4,38 @@ from menu_sys import Menu_System
 
 def spring_force():
     print("Hooke's Law: F = -k * x")
-    print("Where:\nF = Restoring force (N)\nk = Spring constant (N/m)\nx = Displacement from equilibrium position (m)")
+    print("Where:F = Restoring force (N)\nk = Spring constant (N/m)\nx = Displacement from equilibrium position (m)")
+
+
+def frequency():
+    print("Frequency: f = (N/t) = 1/T")
+    print("Frequency of spring: 1/2pi * sqrt(k/m)")
+    print("Where:f = Frequency (Hz)\nk = Spring constant (N/m)\nm = Mass (kg)")
 
 
 def oscillatory_motion():
-    print("Position: x(t) = A * cos(wt)\nVelocity: v(t) = -Aw * sin(wt)\nAcceleration: a(t) = -Aw^2 * cos(wt)")
-    print("Where:\nA = Amplitude (m)\nw = Angular frequency (rad/s)\nt = Time (s)")
+    print("""
+          Position: x(t) = A * cos(wt)
+          Velocity: v(t) = -2A * pi* f * sin(2pi*f*t) = -v_max * sin(2pi*f*t))
+          Acceleration: a(t) = -4A * pi^2 * f^2 * cos(2pi*f*t)
+    """)
+    print("Where:A = Amplitude (m)")
 
 
-def angular_frequency():
-    print("Angular Frequency: w = 2pif = sqrt(k / m)")
-    print("Where:\nw = Angular frequency (rad/s)\nf = Frequency (Hz)\nk = Spring constant (N/m)\nm = Mass (kg)")
-
-
-def pendulum_frequency():
+def simple_pendulum_frequency():
     print("Simple Pendulum Frequency: f = (1 / 2pi) * sqrt(g / L)")
-    print("Where:\ng = Acceleration due to gravity (9.8 m/s^2)\nL = Length of the pendulum (m)")
+    print("Where:g = Acceleration due to gravity (9.8 m/s^2)\nL = Length of the pendulum (m)")
+    
+    
+def normal_pendulum_frequency():
     print("Physical Pendulum Frequency: f = (1 / 2pi) * sqrt(mgr / I)")
-    print("Where:\nm = Mass (kg)\ng = Acceleration due to gravity (9.8 m/s^2)\nr = Distance to pivot (m)\nI = Moment of inertia (kg*m^2)")
+    print("Where:m = Mass (kg)\ng = Acceleration due to gravity (9.8 m/s^2)\nr = Distance to pivot (m)\nI = Moment of inertia (kg*m^2)")
+    print("Beam Pendulum Frequency: f = (1 / 2pi) * sqrt(3g/2L)")
 
 
 def elastic_potential_energy():
     print("Elastic Potential Energy: E = 0.5 * k * x^2")
-    print("Where:\nE = Elastic potential energy (J)\nk = Spring constant (N/m)\nx = Displacement (m)")
+    print("Where:E = Elastic potential energy (J)\nk = Spring constant (N/m)\nx = Displacement (m)")
 
 
 menu_structure = {
@@ -34,9 +43,10 @@ menu_structure = {
         "title": "Oscillatory Motion and Waves",
         "options": {
             "Spring Force (Hooke's Law)": spring_force,
+            "Frequency of Oscillations": frequency,
             "Oscillatory Motion Equations": oscillatory_motion,
-            "Angular Frequency": angular_frequency,
-            "Pendulum Frequency": pendulum_frequency,
+            "Simple Pendulum Frequency": simple_pendulum_frequency,
+            "Other Pendulum Frequencies": normal_pendulum_frequency,
             "Elastic Potential Energy": elastic_potential_energy
         }
     }
