@@ -20,7 +20,7 @@ def angular_frequency():
 
 def oscillatory_motion():
     print("Position: x = A * cos(wt)")
-    print("Velocity: v = -2A * pi* f * sin(2pi*f*t) = -v_max * sin(2pi*f*t))")
+    print("Velocity: v = -A * 2*pi*f * sin(2pi*f*t) = -v_max * sin(2pi*f*t))")
     print("Acceleration: a = -4A * pi^2 * f^2 * cos(2pi*f*t) = -a_max * cos(2pi*f*t)")
     print("Where:A = Amplitude (m)")
 
