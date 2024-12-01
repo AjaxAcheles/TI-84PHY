@@ -9,16 +9,19 @@ def spring_force():
 
 def frequency():
     print("Frequency: f = (N/t) = 1/T")
-    print("Frequency of spring: 1/2pi * sqrt(k/m)")
+    print("Frequency of spring: f = 1/2pi * sqrt(k/m)")
     print("Where:f = Frequency (Hz)\nk = Spring constant (N/m)\nm = Mass (kg)")
 
 
+def angular_frequency():
+    print("w = 2*pi*f")
+    print("Where:w = Angular frequency (rad/s)\nf = Frequency (Hz)")
+
+
 def oscillatory_motion():
-    print("""
-          Position: x(t) = A * cos(wt)
-          Velocity: v(t) = -2A * pi* f * sin(2pi*f*t) = -v_max * sin(2pi*f*t))
-          Acceleration: a(t) = -4A * pi^2 * f^2 * cos(2pi*f*t)
-    """)
+    print("Position: x = A * cos(wt)")
+    print("Velocity: v = -2A * pi* f * sin(2pi*f*t) = -v_max * sin(2pi*f*t))")
+    print("Acceleration: a = -4A * pi^2 * f^2 * cos(2pi*f*t) = -a_max * cos(2pi*f*t)")
     print("Where:A = Amplitude (m)")
 
 
@@ -47,7 +50,8 @@ menu_structure = {
             "Oscillatory Motion Equations": oscillatory_motion,
             "Simple Pendulum Frequency": simple_pendulum_frequency,
             "Other Pendulum Frequencies": normal_pendulum_frequency,
-            "Elastic Potential Energy": elastic_potential_energy
+            "Elastic Potential Energy": elastic_potential_energy,
+            "Angular frequency": angular_frequency
         }
     }
 }
