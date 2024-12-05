@@ -4,33 +4,33 @@ from ti_system import disp_clr
 def wave_speed():
     disp_clr()
     print("Wave Speed Equation:")
-    print("v = λf")
+    print("v = /\f")
     print("Where:")
     print("v = wave speed")
-    print("λ = wavelength")
+    print("/\ = wavelength")
     print("f = frequency")
 
 def wave_function():
     disp_clr()
     print("Wave Function:")
-    print("y = A sin(2π(x/λ ± ft))")
+    print("y = A sin(2pi(x//\ ± ft))")
     print("Where:")
     print("y = displacement")
     print("A = amplitude")
     print("x = position")
-    print("λ = wavelength")
+    print("/\ = wavelength")
     print("f = frequency")
     print("t = time")
 
 def sound_pressure_variation():
     disp_clr()
     print("Sound Pressure Variation:")
-    print("P = Pmax sin(2π(x/λ ± ft))")
+    print("P = Pmax sin(2pi(x//\ ± ft))")
     print("Where:")
     print("P = pressure variation")
     print("Pmax = maximum pressure variation")
     print("x = position")
-    print("λ = wavelength")
+    print("/\ = wavelength")
     print("f = frequency")
     print("t = time")
 
@@ -45,7 +45,7 @@ def speed_of_sound_in_air():
 def doppler_effect():
     disp_clr()
     print("Doppler Effect:")
-    print("f_ob = f_s * ((v ± v_ob) / (v ∓ v_s))")
+    print("f_ob = f_s * ((v +- v_ob) / (v -+ v_s))")
     print("Where:")
     print("f_ob = observed frequency")
     print("f_s = source frequency")
@@ -64,12 +64,12 @@ def law_of_reflection():
 def standing_wave():
     disp_clr()
     print("Standing Wave:")
-    print("y = 2A sin(2πx/λ) cos(2πft)")
+    print("y = 2A sin(2pix//\) cos(2pift)")
     print("Where:")
     print("y = displacement")
     print("A = amplitude")
     print("x = position")
-    print("λ = wavelength")
+    print("/\ = wavelength")
     print("f = frequency")
     print("t = time")
 
