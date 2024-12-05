@@ -4,6 +4,7 @@ from menu_sys import *
 
 
 def energy_RA():
+    disp_clr()
     print("If potential energy NOT exists then use W=E_k. Else if there is any work done by nonconservative forces then use W=sum(E) (Nonconservative work-energy theorem). Else use E_f=E_i (Law of conservation of mechanical energy)")
 
 

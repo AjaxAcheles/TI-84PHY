@@ -4,6 +4,7 @@ from menu_sys import *
 
 
 def RA():
+    disp_clr()
     print("Sketch situation. Create a list of kinematic variables beginning with what you are asked for and what is given. Solve")
 
 

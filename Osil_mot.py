@@ -1,24 +1,29 @@
 from math import pi, sqrt
+from ti_system import disp_clr
 from menu_sys import Menu_System
 
 
 def spring_force():
+    disp_clr()
     print("Hooke's Law: F = -k * x")
     print("Where:F = Restoring force (N)\nk = Spring constant (N/m)\nx = Displacement from equilibrium position (m)")
 
 
 def frequency():
+    disp_clr()
     print("Frequency: f = (N/t) = 1/T")
     print("Frequency of spring: f = 1/2pi * sqrt(k/m)")
     print("Where:f = Frequency (Hz)\nk = Spring constant (N/m)\nm = Mass (kg)")
 
 
 def angular_frequency():
+    disp_clr()
     print("w = 2*pi*f")
     print("Where:w = Angular frequency (rad/s)\nf = Frequency (Hz)")
 
 
 def oscillatory_motion():
+    disp_clr()
     print("Position: x = A * cos(wt)")
     print("Velocity: v = -A * 2*pi*f * sin(2pi*f*t) = -v_max * sin(2pi*f*t))")
     print("Acceleration: a = -4A * pi^2 * f^2 * cos(2pi*f*t) = -a_max * cos(2pi*f*t)")
@@ -26,17 +31,20 @@ def oscillatory_motion():
 
 
 def simple_pendulum_frequency():
+    disp_clr()
     print("Simple Pendulum Frequency: f = (1 / 2pi) * sqrt(g / L)")
     print("Where:g = Acceleration due to gravity (9.8 m/s^2)\nL = Length of the pendulum (m)")
     
     
 def normal_pendulum_frequency():
+    disp_clr()
     print("Physical Pendulum Frequency: f = (1 / 2pi) * sqrt(mgr / I)")
     print("Where:m = Mass (kg)\ng = Acceleration due to gravity (9.8 m/s^2)\nr = Distance to pivot (m)\nI = Moment of inertia (kg*m^2)")
     print("Beam Pendulum Frequency: f = (1 / 2pi) * sqrt(3g/2L)")
 
 
 def elastic_potential_energy():
+    disp_clr()
     print("Elastic Potential Energy: E = 0.5 * k * x^2")
     print("Where:E = Elastic potential energy (J)\nk = Spring constant (N/m)\nx = Displacement (m)")
 
