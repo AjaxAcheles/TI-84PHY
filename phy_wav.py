@@ -13,8 +13,9 @@ def wave_speed():
 def wave_function():
     disp_clr()
     print("Wave Function:")
-    print("y = A sin(2pi(x/(lambda) ± ft))")
+    print("y = A*sin((2*pi*x/(lambda) -+ 2pi*f*t))")
     print("Where:")
+    print("-+ = wave direction (use - for +x direction and + for -x direction)")
     print("y = displacement")
     print("A = amplitude")
     print("x = position")
@@ -25,8 +26,9 @@ def wave_function():
 def sound_pressure_variation():
     disp_clr()
     print("Sound Pressure Variation:")
-    print("P = Pmax sin(2pi(x/(lambda) ± ft))")
+    print("P = Pmax*sin((2*pi*x/(lambda) -+ 2pi*f*t))")
     print("Where:")
+    print("-+ = wave direction (use - for +x direction and + for -x direction)")
     print("P = pressure variation")
     print("Pmax = maximum pressure variation")
     print("x = position")
@@ -56,15 +58,15 @@ def doppler_effect():
 def law_of_reflection():
     disp_clr()
     print("Law of Reflection:")
-    print("(theta)i = (theta)r")
+    print("(theta)_i = (theta)_r")
     print("Where:")
-    print("(theta)i = angle of incidence")
-    print("(theta)r = angle of reflection")
+    print("(theta)_i = angle of incidence")
+    print("(theta)_r = angle of reflection")
 
 def standing_wave():
     disp_clr()
     print("Standing Wave:")
-    print("y = 2A sin(2pix/(lambda)) cos(2pift)")
+    print("y = 2A*sin(2*pi*x/(lambda))*cos(2*pi*f*t)")
     print("Where:")
     print("y = displacement")
     print("A = amplitude")
@@ -76,7 +78,7 @@ def standing_wave():
 def standing_wave_frequencies():
     disp_clr()
     print("Standing Wave Frequencies (fixed string and open tube):")
-    print("fn = n * (v / 2L)")
+    print("fn = n * (v / 2*L)")
     print("Where:")
     print("fn = nth harmonic frequency")
     print("n = 1, 2, 3, ...")
