@@ -46,9 +46,7 @@ def speed_of_sound_in_air():
 
 def doppler_effect():
     disp_clr()
-    print("Doppler Effect:")
     print("f_ob = f_s * ((v +- v_ob) / (v -+ v_s))")
-    print("Where:")
     print("f_ob = observed frequency")
     print("f_s = source frequency")
     print("v = wave speed in the medium")
@@ -65,7 +63,6 @@ def law_of_reflection():
 
 def standing_wave():
     disp_clr()
-    print("Standing Wave:")
     print("y = 2A*sin(2*pi*x/(lambda))*cos(2*pi*f*t)")
     print("Where:")
     print("y = displacement")
